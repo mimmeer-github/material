@@ -17,20 +17,34 @@
   </script>
 </head>
 <body>
-  <h1 class="md-typescale-display-medium">Hello Material!</h1>
-  <form>
-    <p class="md-typescale-body-medium">Check out these controls in a form!</p>
-    <md-checkbox></md-checkbox>
-    <div>
-      <md-radio name="group"></md-radio>
-      <md-radio name="group"></md-radio>
-      <md-radio name="group"></md-radio>
+  <body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button class="operator"   
+ data-value="+">+</button>
+            <button class="operator" data-value="-">-</button>
+            <button class="operator" data-value="*">*</button>
+            <button class="operator" data-value="/">/</button>
+            <button class="number"   
+ data-value="7">7</button>
+            <button class="number" data-value="8">8</button>
+            <button class="number" data-value="9">9</button>
+            <button class="number" data-value="4">4</button>
+            <button class="number" data-value="5">5</button>
+            <button class="number" data-value="6">6</button>
+            <button class="number" data-value="1">1</button>
+            <button class="number" data-value="2">2</button>
+            <button class="number" data-value="3">3</button>   
+
+            <button class="number" data-value="0">0</button>
+            <button class="decimal"   
+ data-value=".">.</button>
+            <button class="clear" data-value="clear">C</button>
+            <button class="equal" data-value="=">=</button>
+        </div>
     </div>
-
-    <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
-
-    <md-outlined-button type="reset">Reset</md-outlined-button>
-  </form>
+    <script src="script.js"></script>
   <style>
     form {
       display: flex;
