@@ -2,7 +2,7 @@ const result = document.getElementById('result');
 const buttons = document.querySelectorAll('md-filled-button');
 
 buttons.forEach(button => {
-    button.addEventListener('click',   
+    md-filled-button.addEventListener('click',   
  () => {
         const value = button.dataset.value;
 
