@@ -1,0 +1,76 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #2e3a2c;
+    --background: #f8fff0;
+    --primary: #42c299;
+    --secondary: #dbffdc;
+    --accent: #47cfdc;
+    --clear: #780d0d;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #c7d3c5;
+    --background: #080f00;
+    --primary: #3ebd95;
+    --secondary: #002401;
+    --accent: #23aab6;
+    --clear: #f28888;
+  }
+}
+
+.calculator {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+button.decimal {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button.number {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+button.clear {
+  background-color: var(--clear);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+button.equal {
+  background-color: var(--accent);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
