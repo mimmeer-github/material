@@ -1,6 +1,6 @@
 const result = document.getElementById('result');
 const buttons = document.querySelectorAll('md-filled-button');
-var res == '';
+let res = '';
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -9,18 +9,18 @@ buttons.forEach(button => {
     if (value === '=') {
       try {
         const expression = result.value;
-        const math = new Function('return ' + expression); // Creates a new function from the expression
+        const math = new Function('return ' + expression);
         const resultValue = math();
         result.value = resultValue;
       } catch (error) {
         result.value = 'Error';
       }
     } else if (value === 'clear') {
-      var.res = '';
+      res = '';
       result.value = '';
     } else {
-      var.res += value;
-      result.value = var.res;
+      res += value;
+      result.value = res;
     }
   });
 });
