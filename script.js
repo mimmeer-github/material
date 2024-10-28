@@ -16,11 +16,11 @@ buttons.forEach(button => {
         result.value = 'Error';
       }
     } else if (value === 'clear') {
-      var.res == '';
+      var.res = '';
       result.value = '';
     } else {
       var.res += value;
-      result.value += value;
+      result.value = var.res;
     }
   });
 });
