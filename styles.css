@@ -48,7 +48,7 @@ button.number {
 
 button.operator {
   background-color: var(--secondary);
-  colour: var(--text);
+  color: var(--text);
   border: none;
   border-radius: 5px;
   padding: 10px;
