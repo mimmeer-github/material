@@ -1,5 +1,5 @@
 const result = document.getElementById('result');
-const buttons = document.querySelectorAll('md-filled-button');
+const buttons = document.querySelectorAll('button');
 let res = '';
 
 buttons.forEach(button => {
