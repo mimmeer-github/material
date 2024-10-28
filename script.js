@@ -1,10 +1,10 @@
 const result = document.getElementById('result');
 const buttons = document.querySelectorAll('md-filled-button');
 
-buttons.forEach(md-filled-button => {
+buttons.forEach(button => {
     button.addEventListener('click',   
  () => {
-        const value = md-filled-button.dataset.value;
+        const value = button.dataset.value;
 
         if   
  (value === '=') {
