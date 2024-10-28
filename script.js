@@ -1,5 +1,6 @@
 const result = document.getElementById('result');
 const buttons = document.querySelectorAll('md-filled-button');
+var res == '';
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -7,7 +8,6 @@ buttons.forEach(button => {
 
     if (value === '=') {
       try {
-        // Safer alternative to eval
         const expression = result.value;
         const math = new Function('return ' + expression); // Creates a new function from the expression
         const resultValue = math();
@@ -16,8 +16,10 @@ buttons.forEach(button => {
         result.value = 'Error';
       }
     } else if (value === 'clear') {
+      var.res == '';
       result.value = '';
     } else {
+      var.res += value;
       result.value += value;
     }
   });
