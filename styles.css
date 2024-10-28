@@ -66,6 +66,14 @@ button.clear {
   cursor: pointer;
 }
 
+button.bksp {
+  background-color: var(--clear);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 button.equal {
   background-color: var(--accent);
