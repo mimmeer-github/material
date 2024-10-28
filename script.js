@@ -1,6 +1,8 @@
 const result = document.getElementById('result');
 const buttons = document.querySelectorAll('button');
+const history = document.querySelector('.history');
 let res = '';
+let historyArray = [];
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -32,3 +34,12 @@ buttons.forEach(button => {
     }
   });
 });
+
+function updateHistory() {
+  history.innerHTML = '';
+  historyArray.forEach(entry => {
+    const historyItem = document.createElement('div');
+    historyItem.textContent = entry;
+    history.appendChild(historyItem);
+  });
+}
