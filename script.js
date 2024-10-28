@@ -1,8 +1,8 @@
 const result = document.getElementById('result');
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('md-filled-button');
 
-md-filled-button.forEach(md-filled-button => {
-    md-filled-button.addEventListener('click',   
+buttons.forEach(md-filled-button => {
+    button.addEventListener('click',   
  () => {
         const value = md-filled-button.dataset.value;
 
